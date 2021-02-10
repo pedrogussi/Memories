@@ -8,9 +8,6 @@ import postRoutes from './routes/post.js';
 
 const app = express();
 
-
-
-
 //Delimitação do tamanho das estruturas em transito e requisição. 
 app.use(bodyPasrser.json({limit: "30mb", extended: true}));
 app.use(bodyPasrser.urlencoded({limit: "30mb", extended: true}));
